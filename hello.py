@@ -55,24 +55,36 @@ print(sum)
 
 
 def format_name(first_name, last_name):
-	name = last_name, first_name
-      return name
-    if last_name == "":
-	    return first_name
-	elif first_name == ""
-	    return last_name
-	elif first_name == "" and last_name == ""
-	    return ""
-	else return name 
+    # code goes here
+    string = "Name: "
+    if first_name != "" and last_name != "":
+        string += last_name + ", " + first_name
+    elif first_name != "" and last_name == "":
+        string += first_name
+    elif first_name == "" and last_name != "":
+        string += last_name
+    else:
+        string = ""
+    return string
+
 
 print(format_name("Ernest", "Hemingway"))
-# Should return the string "Name: Hemingway, Ernest"
+# Should be "Name: Hemingway, Ernest"
 
 print(format_name("", "Madonna"))
-# Should return the string "Name: Madonna"
+# Should be "Name: Madonna"
 
 print(format_name("Voltaire", ""))
-# Should return the string "Name: Voltaire"
+# Should be "Name: Voltaire"
 
 print(format_name("", ""))
-# Should return an empty string
+# Should be ""
+
+
+def sum(x, y):
+    return (x+y)
+
+
+print(sum(sum(1, 2), sum(3, 4)))
+
+((10 >= 5*2) and (10 <= 5*2))
