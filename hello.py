@@ -87,4 +87,63 @@ def sum(x, y):
 
 print(sum(sum(1, 2), sum(3, 4)))
 
-((10 >= 5*2) and (10 <= 5*2))
+
+def print_range(start, end):
+    # Loop through the numbers from start to end
+    n = start
+    while n <= end:
+        print(n)
+        n += 1
+
+
+print_range(1, 5)  # Should print 1 2 3 4 5
+print("")
+
+# Fill in the blanks to make the print_prime_factors function print all the prime factors of a number. A prime factor is a number that is prime and divides another without a remainder.
+
+
+def print_prime_factors(number):
+    # Start with two, which is the first prime
+    factor = 2
+    # Keep going until the factor is larger than the number
+    while factor <= number:
+        # Check if factor is a divisor of number
+        if number % factor == 0:
+            # If it is, print it and divide the original number
+            print(factor)
+            number = number / factor
+        else:
+            # If it's not, increment the factor by one
+            factor += 1
+    return "Done"
+
+
+print_prime_factors(100)
+# Should print 2,2,5,5
+# DO NOT DELETE THIS COMMENT
+
+print(" ")
+
+
+def is_power_of_two(number):
+    # Check if the number can be divided by two without a remainder
+    while number % 2 == 0:
+        if number <= 0:
+            return False
+        else:
+            number = number / 2
+            return True
+        break
+    # If after dividing by two the number is 1, it's a power of two
+    if number == 1:
+        return True
+
+    return False
+
+
+print(is_power_of_two(0))  # Should be False
+print(is_power_of_two(1))  # Should be True
+print(is_power_of_two(8))  # Should be True
+print(is_power_of_two(9))  # Should be False
+
+print(" ")
