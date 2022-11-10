@@ -147,3 +147,12 @@ print(is_power_of_two(8))  # Should be True
 print(is_power_of_two(9))  # Should be False
 
 print(" ")
+
+
+print("")
+
+teams = ['Dragons', 'Wolves', 'Pandas', 'Unicorns']
+for home_team in teams:
+    for away_team in teams:
+        if home_team != away_team:
+            print(home_team + " play against the " + away_team)
