@@ -169,3 +169,6 @@ def show_letters(word):
 
 show_letters("Hello")
 # Should print one line per letter
+for xx in range(10):
+    for y in range(xx):
+        print(y)
